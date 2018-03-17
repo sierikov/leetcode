@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/artem/Projects/C++/Nure - Labs/Lab_01/BankData.h
+iostream
+-
+cstring
+-
+Validator.h
+/home/artem/Projects/C++/Nure - Labs/Lab_01/Validator.h
+
+/home/artem/Projects/C++/Nure - Labs/Lab_01/Validator.h
+
+/home/artem/Projects/C++/Nure - Labs/Lab_01/main.cpp
+BankData.h
+/home/artem/Projects/C++/Nure - Labs/Lab_01/BankData.h
+
