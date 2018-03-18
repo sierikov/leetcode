@@ -28,7 +28,7 @@ int main() {
     while (true) {
         option = displayMenu();
         if (option == 1) sortDataByName(amount, pointerData);
-            // else if (option == 2) outputYearDate();
+        else if (option == 2) outputYearDate(amount, pointerData);
         else break;
     }
     delete[] bankData;

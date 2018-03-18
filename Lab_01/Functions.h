@@ -1,7 +1,5 @@
 #include "BankData.h"
 
-void sortDataByName();
-
 int displayMenu() {
     int option;
     std::cout << " === Menu === \n"
@@ -17,8 +15,8 @@ void sortDataByName(int amount, BankData **pointerData) {
     std::cout << "Sorting ..";
     for (int i = 0; i < amount; ++i) {
         for (int j = 0; j < amount - i - 1; ++j) {
-            if (strcmp(pointerData[j] -> name,
-                       pointerData[j+1] -> name) > 0 ) {
+            if (strcmp(pointerData[j]->name,
+                       pointerData[j + 1]->name) > 0) {
                 BankData *temp = pointerData[j];
                 pointerData[j] = pointerData[j + 1];
                 pointerData[j + 1] = temp;
@@ -30,6 +28,18 @@ void sortDataByName(int amount, BankData **pointerData) {
     std::cin >> temp;
     if (temp == 'Y' || temp == 'y')
         for (int i = 0; i < amount; ++i)
-            pointerData[i] -> output();
+            pointerData[i]->output();
+}
+
+void outputYearDate(int amount, BankData **pointerData) {
+    int year;
+    do {
+        std::cout << "Enter the year please : ";
+        std::cin >> year;
+    } while (!validate(year));
+
+    for (int i = 0; i < amount; ++i) {
+        if (pointerData[i]->year == year) pointerData[i]->output();
+    }
 }
 
