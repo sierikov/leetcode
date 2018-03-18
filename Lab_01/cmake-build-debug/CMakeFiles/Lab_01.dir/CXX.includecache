@@ -14,9 +14,13 @@ cstring
 Validator.h
 /home/artem/Projects/C++/Nure - Labs/Lab_01/Validator.h
 
+/home/artem/Projects/C++/Nure - Labs/Lab_01/Functions.h
+BankData.h
+/home/artem/Projects/C++/Nure - Labs/Lab_01/BankData.h
+
 /home/artem/Projects/C++/Nure - Labs/Lab_01/Validator.h
 
 /home/artem/Projects/C++/Nure - Labs/Lab_01/main.cpp
-BankData.h
-/home/artem/Projects/C++/Nure - Labs/Lab_01/BankData.h
+Functions.h
+/home/artem/Projects/C++/Nure - Labs/Lab_01/Functions.h
 

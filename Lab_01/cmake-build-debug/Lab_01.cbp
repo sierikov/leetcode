@@ -87,6 +87,9 @@
 		<Unit filename="/home/artem/Projects/C++/Nure - Labs/Lab_01/BankData.h">
 			<Option target="Lab_01"/>
 		</Unit>
+		<Unit filename="/home/artem/Projects/C++/Nure - Labs/Lab_01/Functions.h">
+			<Option target="Lab_01"/>
+		</Unit>
 		<Unit filename="/home/artem/Projects/C++/Nure - Labs/Lab_01/Validator.h">
 			<Option target="Lab_01"/>
 		</Unit>

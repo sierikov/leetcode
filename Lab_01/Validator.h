@@ -6,3 +6,5 @@ bool validate(double value) {
     return value > 0.001;
 }
 
+
+
