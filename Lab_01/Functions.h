@@ -11,6 +11,12 @@ int displayMenu() {
     return option;
 }
 
+bool choice(){
+    char temp;
+    std::cin >> temp;
+    return temp == 'Y' || temp == 'y';
+}
+
 void sortDataByName(int amount, BankData **pointerData) {
     std::cout << "Sorting ..";
     for (int i = 0; i < amount; ++i) {
@@ -24,9 +30,8 @@ void sortDataByName(int amount, BankData **pointerData) {
         }
     }
     std::cout << "Done.\n Want to see new Base [Y/N]: ";
-    char temp;
-    std::cin >> temp;
-    if (temp == 'Y' || temp == 'y')
+
+    if (choice())
         for (int i = 0; i < amount; ++i)
             pointerData[i]->output();
 }
