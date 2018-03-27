@@ -19,6 +19,14 @@ void inputFile() {
 }
 
 bool initDuoList() {
+    int bufferSize = 100, titleSize = 50;
+    char bufferStr[bufferSize];
+    char title[titleSize];
     std::ifstream file("theater.dat");
+    file.getline(bufferStr, bufferSize);
+    for (int i = 0; i < bufferSize; i++) {
+        if (bufferStr[i] == '`')
+            for (int j = 0; j < titleSize; j++) {
+    }
 
 }

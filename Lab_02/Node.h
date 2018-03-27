@@ -6,47 +6,50 @@
 #include "Performance.h"
 
 class List {
-    Performance *Head, *Tail;
+    Performance *head, *tail;
 public:
-    List() : Head(nullptr), Tail(nullptr) {};
+    List() : head(nullptr), tail(nullptr) {};
     ~List(); //Destruct
-    void Show();
-    void Add(float cost, int day);
+    void show();
+    void add(float cost, int day);
+    void deleteElement();
+    void foundElement();
+
 };
 
 List::~List() {
-    while (Head) {
+    while (head) {
         //BackUp Next Address
-        Tail = Head->Next;
+        tail = head->Next;
         //Deleting address 1st element
-        delete Head;
+        delete head;
         //Changing begin to next element
-        Head = Tail;
+        head = tail;
     }
 }
 
-void List::Add(float cost, int day) {
+void List::add(float cost, int day) {
     auto *temp = new Performance;
     temp->Next = nullptr;
     temp->cost = cost;
     temp->day = day;
 
-    if (Head != nullptr) {
+    if (head != nullptr) {
         //Adding address on previous element
-        temp->Prev = Tail;
-        Tail->Next = temp;
-        //change Tail address
-        Tail = temp;
+        temp->Prev = tail;
+        tail->Next = temp;
+        //change tail address
+        tail = temp;
     } else {
         //List is empty
         temp->Prev = nullptr;
-        Head = Tail = temp;
+        head = tail = temp;
     }
 }
 
-void List::Show() {
-    //from the Tail
-    Performance *temp = Tail;
+void List::show() {
+    //from the tail
+    Performance *temp = tail;
     while (temp != nullptr) {
         std::cout << "Cost: "temp->cost << " ";
         //Change address on previous element
@@ -54,12 +57,26 @@ void List::Show() {
     }
     std::cout << "\n";
 
-    //from the Head
-    temp = Head;
+    //from the head
+    temp = head;
     while (temp != nullptr) {
         std::cout << "Cost: "temp->cost << " ";
         //Change address on next element
         temp = temp->Next;
     }
     std::cout << "\n";
+}
+
+void List::deleteElement(){
+    Performance *temp = tail;
+
+}
+
+void List::foundElement() {
+    Performance *temp = head;
+    int userDay = 3;
+    while (temp != nullptr) {
+        if (userDay == temp->day) std::cout << "Item has been found!" << std::endl;
+        temp = temp->Next;
+    }
 }

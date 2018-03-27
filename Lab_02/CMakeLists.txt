@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(Laba_02
         main.cpp
         Performance.h
-        Date.h Functions.h Node.h)
+        Date.h Functions.h Node.h Validator.h)
