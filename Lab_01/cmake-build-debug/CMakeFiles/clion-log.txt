@@ -1,4 +1,0 @@
-/home/artem/.local/share/umake/ide/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/artem/Projects/C++/Nure - Labs/Lab_01"
--- Configuring done
--- Generating done
--- Build files have been written to: /home/artem/Projects/C++/Nure - Labs/Lab_01/cmake-build-debug

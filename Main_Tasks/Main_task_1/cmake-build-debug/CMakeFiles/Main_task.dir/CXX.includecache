@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_task_1/Abonent.h
+Validator.h
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_task_1/Validator.h
+
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_task_1/Functions.h
+
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_task_1/Validator.h
+cstring
+-
+iostream
+-
+
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_task_1/main.cpp
+iostream
+-
+Abonent.h
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_task_1/Abonent.h
+Functions.h
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_task_1/Functions.h
+
