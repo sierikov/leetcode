@@ -98,8 +98,7 @@ char prompt_menu_item()//Меню
 }
 
 // INPUT NUMBER
-int input_number(char *str, int strlen, char *info)
-{
+int input_number(char *str, int strlen, char *info) {
     int i = 0;
     char ch;
 
@@ -118,8 +117,7 @@ int input_number(char *str, int strlen, char *info)
 }
 
 //INPUT
-int input_name(char *str, int strlen, char *info)
-{
+int input_name(char *str, int strlen, char *info) {
     int i = 0;
     char ch;
 
@@ -218,7 +216,7 @@ void search_in_phonelist(PhoneItem *head)//Поиск по фамилии или
     } while (!strchr("12", variant));
 
     tmpstr[0] = '\0';
-    system("cls"); // очищаем содержимое экрана
+
 
     if (variant == 1) {
         input_name(tmpstr, 21, const_cast<char *>("Введите фамилию для поиска"));
@@ -252,7 +250,6 @@ void load_phonelist(PhoneItem *&head)//Загрузка из файла
     PhoneItem *tmpItem;
     int count = 0;
     FILE *fin = fopen(F_NAME, "rt");
-    system("cls"); // очищаем содержимое экрана
 
     if (fin != nullptr) {
         while (!feof(fin)) {
@@ -291,7 +288,6 @@ void save_phonelist(PhoneItem *head)//Сохранить в файл
     int count = 0;
     FILE *fout = fopen(F_NAME, "wt");
 
-    system("cls"); // очищаем содержимое экрана
 
     if (fout != nullptr) {
         while (tmpItem) {
@@ -311,8 +307,6 @@ int delete_phoneitem(PhoneItem *&head)//Удаление записи
     PhoneItem *tmpSearch = head;
     char tmp_phone[13];
     tmp_phone[0] = '\0';
-
-    system("cls"); // очищаем содержимое экрана
     input_number(tmp_phone, 13, const_cast<char *>("Чтобы удалить запись, введите номер телефона"));
     while (tmpSearch) {
         if (strcmp(tmpSearch->phone, tmp_phone) == 0) {
@@ -347,7 +341,6 @@ void sort_phonelist(PhoneItem *&head)//Сортировка справочник
         tmpHead = tmpHead->next;
     }
 
-    system("cls"); // очищаем содержимое экрана
     cout << endl << "Идет сортировка ..." << endl;
 
 
