@@ -1,8 +1,3 @@
-#ifndef MAIN_TASK_4_FUNCTIONS_H
-#define MAIN_TASK_4_FUNCTIONS_H
-
-#endif //MAIN_TASK_4_FUNCTIONS_H
-
 #pragma once
 #include <iostream>
 #include <cstdio>
@@ -101,4 +96,4 @@ std::istream& operator>> (std::istream &stream, someArray &arr1)
     for(int i=0; i < arr1.size(); i++)
         stream >> arr1[i];
     return stream;
-};%
+};

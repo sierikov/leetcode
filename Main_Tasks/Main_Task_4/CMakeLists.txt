@@ -3,4 +3,4 @@ project(Main_Task_4)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Main_Task_4 main.cpp)
+add_executable(Main_Task_4 main.cpp Functions.h)
