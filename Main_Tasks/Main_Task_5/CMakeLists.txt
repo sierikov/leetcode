@@ -3,4 +3,4 @@ project(Main_Task_5)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Main_Task_5 main.cpp Matrix.h)
+add_executable(Main_Task_5 main.cpp ral.h)

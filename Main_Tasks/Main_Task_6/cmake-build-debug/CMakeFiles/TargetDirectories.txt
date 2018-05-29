@@ -1,0 +1,3 @@
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_Task_6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_Task_6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/artem/Projects/C++/NURE-Labs/Main_Tasks/Main_Task_6/cmake-build-debug/CMakeFiles/Main_Task_6.dir
