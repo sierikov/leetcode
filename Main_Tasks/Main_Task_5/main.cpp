@@ -1,4 +1,5 @@
-#include "ral.h"
+#include <cstring>
+#include "encryption.h"
 
 using namespace ral;
 
@@ -33,16 +34,6 @@ namespace ral
         keytype g;
         return my_manip(horrible_manip, n, g);
     }
-
-    my_manip encrypt(alg n, const char * key)
-    {
-        keytype k;
-        std::vector<unsigned char> a;
-        k.push_back(a);
-        for (int i = 0; i < strlen(key); ++i)
-            k[0].push_back(key[i]);
-        return my_manip(horrible_manip, n, k);
-    }
 }
 
 ourbuf::int_type ourbuf::overflow(int_type c)
@@ -51,14 +42,9 @@ ourbuf::int_type ourbuf::overflow(int_type c)
     {
         switch (crypto)
         {
-            case gamm:
-            {
-                c ^= key[0][count++ % key[0].size()];
-            } break;
-            case subst:
             case polisub:
             {
-                int alphc = key.size();
+                auto alphc = static_cast<int>(key.size());
                 int_type dst = c;
                 dst = (key[count][c >> 4] << 4) & 0xF0;
                 ++count;
