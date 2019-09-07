@@ -1,3 +1,0 @@
-/home/artem/Projects/C++/NURE-Labs/Labs/Lab_01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/artem/Projects/C++/NURE-Labs/Labs/Lab_01/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/artem/Projects/C++/NURE-Labs/Labs/Lab_01/cmake-build-debug/CMakeFiles/Lab_01.dir
