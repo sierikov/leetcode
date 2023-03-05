@@ -1,0 +1,41 @@
+name: CI
+on:
+  pull_request:
+  push:
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: temurin
+          java-version: 11
+      - name: Format sources
+        run: sbt scalafmtCheck
+      - name: Format test
+        run: sbt Test/scalafmtCheck
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: temurin
+          java-version: 11
+      - name: Build and Test
+        run: sbt coverage test
+      - name: Generate Coverage report
+        run: sbt coverageReport
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          name: codewars # optional
+          fail_ci_if_error: true # optional (default = false)
+          verbose: true # optional (default = false)

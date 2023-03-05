@@ -1,2 +1,7 @@
-.idea/
-out/
+.vscode
+.metals
+.bsp
+target
+out
+.DS_STORE
+.idea
