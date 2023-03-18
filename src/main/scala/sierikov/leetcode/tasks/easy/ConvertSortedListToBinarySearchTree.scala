@@ -14,7 +14,6 @@ object ConvertSortedListToBinarySearchTree {
     var right: TreeNode = _right
   }
 
-
   /**
    * Convert linked list to vector
    * @param head head of linked list
@@ -31,7 +30,7 @@ object ConvertSortedListToBinarySearchTree {
    * Convert vector to binary tree
    * Algorithm:
    * 1. Find the middle element of the vector
-   * 2. Recursively create left and right subtrees
+   * 2. Recursively create current and right subtrees
    *
    * Illustration:
    * Input: 1 -> 2 -> 3 -> 4 -> 5
