@@ -12,6 +12,7 @@ class NumberOfZeroFilledSubarraysTest extends AnyFlatSpec {
   it should "pass basic test" in {
     assert(zeroFilledSubarray(Array(1, 3, 0, 0, 2, 0, 0, 4)) == 6)
     assert(zeroFilledSubarray(Array(0, 0, 0, 2, 0, 0)) == 9)
+    assert(zeroFilledSubarray(Array(0, 2, 0, 0, 0, 3, 0)) == 8)
   }
 
 }
