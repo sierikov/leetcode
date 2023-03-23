@@ -10,6 +10,4 @@ class ContainsDuplicateTest extends AnyFlatSpec {
     assert(!containsDuplicate(Array(1, 2, 3, 4)))
   }
 
-
-
 }
