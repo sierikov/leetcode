@@ -9,4 +9,7 @@ class ContainsDuplicateTest extends AnyFlatSpec {
     assert(containsDuplicate(Array(1, 1, 1, 3, 3, 4, 3, 2, 4, 2)))
     assert(!containsDuplicate(Array(1, 2, 3, 4)))
   }
+
+
+
 }
