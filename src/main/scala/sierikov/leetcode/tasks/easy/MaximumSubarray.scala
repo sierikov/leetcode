@@ -11,6 +11,7 @@ object MaximumSubarray {
     * @return maximum sum subarray
     * @see [[https://leetcode.com/problems/maximum-subarray/]]
     * @see [[https://en.wikipedia.org/wiki/Maximum_subarray_problem]]
+    * @see [[BestTimeToBuyAndSellStock]]
     */
   def maxSubArray(nums: Array[Int]): Int = helper(nums)
 

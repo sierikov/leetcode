@@ -13,6 +13,7 @@ object IntersectionOfTwoArraysII {
     * @param nums1 first array of integers
     * @param nums2 second array of integers
     * @return array of integers that are present in both arrays
+    * @see [[https://leetcode.com/problems/intersection-of-two-arrays-ii/]]
     */
   def intersect(nums1: Array[Int], nums2: Array[Int]): Array[Int] = {
     val sorted1 = nums1.sorted
