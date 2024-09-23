@@ -1,7 +1,10 @@
-.vscode
-.metals
+.bloop
 .bsp
-target
-out
 .DS_STORE
 .idea
+.metals
+.vscode
+metals.sbt
+out
+project/project
+target
