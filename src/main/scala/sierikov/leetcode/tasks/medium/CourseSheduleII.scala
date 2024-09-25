@@ -11,10 +11,10 @@ object CourseSheduleII {
     iterateOverCourses(map, starting)
   }
 
-  def createMap(prerequisites: Array[Array[Int]]): Map[Int, Array[Int]] = 
+  def createMap(prerequisites: Array[Array[Int]]): Map[Int, Array[Int]] =
     prerequisites.groupMap(_.apply(0))(_.tail.head)
 
-  def findStarting(n: Int, map: Map[Int, Array[Int]]): Set[Int] = 
+  def findStarting(n: Int, map: Map[Int, Array[Int]]): Set[Int] =
     (0 until n).filter(i => map.get(i).isEmpty).toSet
 
   @scala.annotation.tailrec
@@ -33,5 +33,5 @@ object CourseSheduleII {
       )
     }
     case None if map.isEmpty => takenCourses.toArray
-    case None => Array.emptyIntArray
+    case None                => Array.emptyIntArray
 }

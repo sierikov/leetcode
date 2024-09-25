@@ -9,7 +9,7 @@ object CountVowelsPermutation {
     def nextMod: VowelsState = VowelsState(
       a = mod(e), // after a can only be e
       e = mod(a + i), // after e can be a or i
-      i = mod(a + e + o + u),  // after i can be any but i
+      i = mod(a + e + o + u), // after i can be any but i
       o = mod(i + u), // after o can be i or u
       u = mod(a) // after u can be only a
     )

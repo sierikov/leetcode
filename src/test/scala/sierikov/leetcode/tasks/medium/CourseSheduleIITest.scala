@@ -12,7 +12,7 @@ class CourseSheduleIITest extends AnyFlatSpec with Matchers {
       Array(Array(1, 0), Array(2, 0), Array(3, 1), Array(3, 2))
     )
 
-    result should (equal(Array(0, 2, 1, 3)) or equal(Array(0, 1, 2, 3)))
+    result should (equal(Array(0, 2, 1, 3)).or(equal(Array(0, 1, 2, 3))))
   }
 
   it should "detect cycles in the graph" in {
