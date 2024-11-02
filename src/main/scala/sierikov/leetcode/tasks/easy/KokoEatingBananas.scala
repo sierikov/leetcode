@@ -37,9 +37,10 @@ object KokoEatingBananas {
 
   private def calcMidpoint(upper: Int, lower: Int): Int = lower + (upper - lower) / 2
 
-  private def calcNeededHoursFor(piles: Array[Int], speed: Int): Int = piles.foldLeft(0) { case (hours, pile) =>
-    val bananas = pile.toDouble
-    val hour = (bananas / speed).ceil
-    hours + hour.toInt
+  private def calcNeededHoursFor(piles: Array[Int], speed: Int): Int = piles.foldLeft(0) {
+    case (hours, pile) =>
+      val bananas = pile.toDouble
+      val hour = (bananas / speed).ceil
+      hours + hour.toInt
   }
 }

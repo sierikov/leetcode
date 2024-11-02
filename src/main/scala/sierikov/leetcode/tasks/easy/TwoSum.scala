@@ -5,11 +5,11 @@ object TwoSum {
     val zipped = nums.zipWithIndex
     val map = zipped.toMap
     zipped
-      .find { case (num, index) =>
-        map.get(target - num).exists(_ != index)
+      .find {
+        case (num, index) => map.get(target - num).exists(_ != index)
       }
-      .map { case (num, index) =>
-        Array(index, map(target - num))
+      .map {
+        case (num, index) => Array(index, map(target - num))
       }
       .get
   }

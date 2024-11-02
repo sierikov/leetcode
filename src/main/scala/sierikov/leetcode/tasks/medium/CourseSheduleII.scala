@@ -15,7 +15,9 @@ object CourseSheduleII {
     prerequisites.groupMap(_.apply(0))(_.tail.head)
 
   def findStarting(n: Int, map: Map[Int, Array[Int]]): Set[Int] =
-    (0 until n).filter(i => map.get(i).isEmpty).toSet
+    (0 until n)
+      .filter(i => map.get(i).isEmpty)
+      .toSet
 
   @scala.annotation.tailrec
   def iterateOverCourses(

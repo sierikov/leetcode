@@ -20,12 +20,7 @@ object IntersectionOfTwoArraysII {
     val sorted2 = nums2.sorted
 
     @tailrec
-    def loop(array1: Array[Int],
-             array2: Array[Int],
-             pointer1: Int = 0,
-             pointer2: Int = 0,
-             acc: Array[Int] = Array.empty
-    ): Array[Int] = {
+    def loop(array1: Array[Int], array2: Array[Int], pointer1: Int = 0, pointer2: Int = 0, acc: Array[Int] = Array.empty): Array[Int] = {
       if (pointer1 >= array1.length || pointer2 >= array2.length) {
         acc
       } else {
