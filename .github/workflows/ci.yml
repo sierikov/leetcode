@@ -4,7 +4,7 @@ on:
   push:
 jobs:
   format:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
         run: sbt Test/scalafmtCheck
 
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
